@@ -75,20 +75,20 @@ export const Footer: React.FC<FooterProps> = () => {
               <div className="flex items-start gap-3 group">
                 <MapPin size={14} className="text-cyan mt-1 shrink-0" />
                 <p className="text-[12px] text-slate-400 font-medium leading-relaxed group-hover:text-white transition-colors">
-                  One World Trade Center, Floor 102<br />
-                  New York, NY 10007
+                  Gostivarska br.21 Tetovo 1200
+                  Macedonia
                 </p>
               </div>
-              <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.location.href = 'mailto:hello@novametric.agency'}>
+              <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.location.href = 'mailto:novametricmk@gmail.com'}>
                 <Mail size={14} className="text-cyan shrink-0" />
                 <p className="text-[12px] text-white font-bold tracking-tight hover:text-cyan transition-colors">
-                  hello@novametric.agency
+                  novametricmk@gmail.com
                 </p>
               </div>
               <div className="flex items-center gap-3 group">
                 <Phone size={14} className="text-cyan shrink-0" />
                 <p className="text-[12px] text-white font-bold tracking-tight">
-                  +1 (212) 555-0198
+                  +389 (076) 276-005
                 </p>
               </div>
             </div>
