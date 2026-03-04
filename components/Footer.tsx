@@ -38,8 +38,19 @@ export const Footer: React.FC<FooterProps> = () => {
               Designing digital experiences that help brands grow and stand out online. We focus on results-driven marketing and professional brand development.
             </p>
             <div className="flex items-center gap-4 pt-2">
-              {[Instagram, Linkedin, Twitter, Github].map((Icon, i) => (
-                <a key={i} href="#" className="p-2 rounded-full bg-white/[0.03] border border-white/10 hover:border-cyan hover:text-cyan transition-all text-slate-500 hover:bg-cyan/[0.05] hover:scale-110">
+              {[
+                { Icon: Instagram, href: 'https://www.instagram.com/novametricmk' },
+                { Icon: Linkedin, href: '#' },
+                { Icon: Twitter, href: '#' },
+                { Icon: Github, href: '#' }
+              ].map(({ Icon, href }, i) => (
+                <a 
+                  key={i} 
+                  href={href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-white/[0.03] border border-white/10 hover:border-cyan hover:text-cyan transition-all text-slate-500 hover:bg-cyan/[0.05] hover:scale-110"
+                >
                   <Icon size={16} />
                 </a>
               ))}
@@ -75,20 +86,20 @@ export const Footer: React.FC<FooterProps> = () => {
               <div className="flex items-start gap-3 group">
                 <MapPin size={14} className="text-cyan mt-1 shrink-0" />
                 <p className="text-[12px] text-slate-400 font-medium leading-relaxed group-hover:text-white transition-colors">
-                  One World Trade Center, Floor 102<br />
-                  New York, NY 10007
+                  Gostivarska 1200<br />
+                  Tetovo Macedonia
                 </p>
               </div>
-              <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.location.href = 'mailto:hello@novametric.agency'}>
+              <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.location.href = 'mailto:novametricmk@gmail.com'}>
                 <Mail size={14} className="text-cyan shrink-0" />
                 <p className="text-[12px] text-white font-bold tracking-tight hover:text-cyan transition-colors">
-                  hello@novametric.agency
+                  novametricmk@gmail.com
                 </p>
               </div>
               <div className="flex items-center gap-3 group">
                 <Phone size={14} className="text-cyan shrink-0" />
                 <p className="text-[12px] text-white font-bold tracking-tight">
-                  +1 (212) 555-0198
+                  +389 76 276 005
                 </p>
               </div>
             </div>
@@ -100,9 +111,9 @@ export const Footer: React.FC<FooterProps> = () => {
             © 2024 NOVAMETRIC DIGITAL. SYSTEMS OPTIMIZED.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-[9px] text-slate-600 hover:text-white uppercase tracking-widest transition-colors font-bold">Privacy</a>
-            <a href="#" className="text-[9px] text-slate-600 hover:text-white uppercase tracking-widest transition-colors font-bold">Terms</a>
-            <a href="#" className="text-[9px] text-slate-600 hover:text-white uppercase tracking-widest transition-colors font-bold">Compliance</a>
+            <Link to="/privacy" className="text-[9px] text-slate-600 hover:text-white uppercase tracking-widest transition-colors font-bold">Privacy</Link>
+            <Link to="/terms" className="text-[9px] text-slate-600 hover:text-white uppercase tracking-widest transition-colors font-bold">Terms</Link>
+            <Link to="/compliance" className="text-[9px] text-slate-600 hover:text-white uppercase tracking-widest transition-colors font-bold">Compliance</Link>
           </div>
         </div>
       </div>

@@ -7,6 +7,9 @@ import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { Insights } from './components/Insights';
+import { Privacy } from './components/Privacy';
+import { Terms } from './components/Terms';
+import { Compliance } from './components/Compliance';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -31,6 +34,9 @@ const App: React.FC = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/insights" element={<Insights />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/compliance" element={<Compliance />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </main>

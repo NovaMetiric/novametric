@@ -62,7 +62,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-[9px] font-black uppercase tracking-widest text-slate-500 mb-1">Direct Secure Line</p>
-                  <span className="text-white font-bold tracking-tight">hello@novametric.agency</span>
+                  <span className="text-white font-bold tracking-tight">novametricmk@gmail.com</span>
                 </div>
               </div>
             </div>
