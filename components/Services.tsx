@@ -4,62 +4,69 @@ import { Check, Minus, ArrowRight, Layout, Search, Megaphone, ShieldCheck, X } f
 import { Service } from '../types';
 import { ScrollReveal } from './ScrollReveal';
 import { Pricing } from './Pricing';
+import { SEO } from './SEO';
 import { Link } from 'react-router-dom';
-
-const SERVICES: Service[] = [
-  {
-    id: '1',
-    title: "Website Design",
-    description: "Modern, fast, and responsive websites designed to convert visitors into clients. Built with clean UI, strong UX, and performance-focused development.",
-    fullDescription: "We don't just design websites; we architect digital presence. Our team merges aesthetic brilliance with cognitive psychology to guide users effortlessly from curiosity to conversion.",
-    benefits: ["Optimized load times", "Mobile-first architecture", "User-centric layout optimization"],
-    deliverables: ["High-Fidelity UI/UX Prototype", "Modern Web Build", "Performance Audit"],
-    icon: <Layout className="w-5 h-5 text-cyan" />
-  },
-  {
-    id: '2',
-    title: "SEO Optimization",
-    description: "Search engine optimization that improves visibility, drives organic traffic, and helps your business rank higher on Google.",
-    fullDescription: "Visibility is the foundation of digital growth. We deploy technical SEO structures and strategic keyword analysis that ensure your brand is found by the right audience.",
-    benefits: ["Improved search rankings", "Local search optimization", "Technical health checks"],
-    deliverables: ["Technical Audit", "Backlink Strategy", "On-page Optimization"],
-    icon: <Search className="w-5 h-5 text-cyan" />
-  },
-  {
-    id: '3',
-    title: "Social Media Management",
-    description: "Strategic content creation and account management that builds brand trust, engagement, and consistent online presence.",
-    fullDescription: "Your brand needs a consistent voice to build lasting trust. We curate strategic content plans that resonate with your target audience and foster genuine engagement.",
-    benefits: ["Brand trust building", "Consistent online presence", "Targeted audience growth"],
-    deliverables: ["Content Strategy", "Social Media Management", "Engagement Reports"],
-    icon: <Megaphone className="w-5 h-5 text-cyan" />
-  },
-  {
-    id: '4',
-    title: "Full Branding",
-    description: "Complete brand identity systems including logo design, color palettes, typography, and visual direction for long-term brand consistency.",
-    fullDescription: "A strong brand is a lasting impression. We forge identities that are impossible to ignore, blending visual semantics with strategic positioning to build market authority.",
-    benefits: ["Consistent visual identity", "Professional market positioning", "Long-term brand equity"],
-    deliverables: ["Identity System", "Brand Guidelines", "Visual Style Guide"],
-    icon: <ShieldCheck className="w-5 h-5 text-cyan" />
-  }
-];
+import { useLanguage } from '../src/translations/LanguageContext';
 
 export const Services: React.FC = () => {
+  const { t } = useLanguage();
   const [selectedService, setSelectedService] = useState<Service | null>(null);
+
+  const SERVICES: Service[] = [
+    {
+      id: '1',
+      title: t('services.web.title'),
+      description: t('services.web.desc'),
+      fullDescription: t('services.web.full_desc'),
+      benefits: [t('services.web.f1'), t('services.web.f2'), t('services.web.f3')],
+      deliverables: [t('services.web.d1'), t('services.web.d2'), t('services.web.d3')],
+      icon: <Layout className="w-5 h-5 text-cyan" />
+    },
+    {
+      id: '2',
+      title: t('services.seo.title'),
+      description: t('services.seo.desc'),
+      fullDescription: t('services.seo.full_desc'),
+      benefits: [t('services.seo.f1'), t('services.seo.f2'), t('services.seo.f3')],
+      deliverables: [t('services.seo.d1'), t('services.seo.d2'), t('services.seo.d3')],
+      icon: <Search className="w-5 h-5 text-cyan" />
+    },
+    {
+      id: '3',
+      title: t('services.social.title'),
+      description: t('services.social.desc'),
+      fullDescription: t('services.social.full_desc'),
+      benefits: [t('services.social.f1'), t('services.social.f2'), t('services.social.f3')],
+      deliverables: [t('services.social.d1'), t('services.social.d2'), t('services.social.d3')],
+      icon: <Megaphone className="w-5 h-5 text-cyan" />
+    },
+    {
+      id: '4',
+      title: t('services.branding.title'),
+      description: t('services.branding.desc'),
+      fullDescription: t('services.branding.full_desc'),
+      benefits: [t('services.branding.f1'), t('services.branding.f2'), t('services.branding.f3')],
+      deliverables: [t('services.branding.d1'), t('services.branding.d2'), t('services.branding.d3')],
+      icon: <ShieldCheck className="w-5 h-5 text-cyan" />
+    }
+  ];
 
   return (
     <div className="pt-32 pb-24">
-      <section id="services" className="px-6 mb-24">
+      <SEO 
+        title="Digital Marketing Services | Web Design, SEO & Branding"
+        description="Explore NovaMetric's precision-built digital solutions. We offer premium website design, strategic SEO optimization, social media management, and full brand identity systems."
+        url="https://novametric.net/services"
+      />
+      <section id="services" className="px-6 mb-32">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
             <div className="mb-16">
-              <p className="text-[9px] font-bold tracking-[0.3em] uppercase text-cyan mb-2">What We Do</p>
-              <h2 className="text-2xl md:text-4xl font-black tracking-tight uppercase">Precision-Built Solutions</h2>
+              <p className="text-[9px] font-bold tracking-[0.3em] uppercase text-cyan mb-2">{t('services.badge')}</p>
+              <h2 className="text-2xl md:text-4xl font-black tracking-tight uppercase">{t('services.title')}</h2>
             </div>
           </ScrollReveal>
 
-          {/* Increased gap-y-16 to ensure no overlapping between rows */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-16 items-stretch">
             {SERVICES.map((service, idx) => (
               <ScrollReveal key={service.id} delay={idx * 100} className="h-full flex flex-col">
@@ -74,51 +81,13 @@ export const Services: React.FC = () => {
                         onClick={() => setSelectedService(service)} 
                         className="mt-auto inline-flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-cyan group-hover:translate-x-1 transition-transform"
                       >
-                        View Specification <ArrowRight className="w-3.5 h-3.5" />
+                        {t('services.view_spec')} <ArrowRight className="w-3.5 h-3.5" />
                       </button>
                    </div>
                 </GlassCard>
               </ScrollReveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="px-6 mb-32">
-        <div className="max-w-6xl mx-auto">
-          <ScrollReveal>
-            <div className="text-center mb-12">
-              <h2 className="text-xl md:text-3xl font-black uppercase mb-4">Service Composition</h2>
-              <p className="text-slate-400 text-[10px] uppercase tracking-[0.2em]">Our systematic approach to category growth.</p>
-            </div>
-            <GlassCard className="overflow-x-auto p-0 border-white/5">
-              <table className="w-full text-left border-collapse min-w-[500px]">
-                <thead>
-                  <tr className="border-b border-white/5 bg-white/[0.02]">
-                    <th className="p-6 text-[9px] font-bold uppercase tracking-[0.2em] text-slate-500">Infrastructure</th>
-                    <th className="p-6 text-[9px] font-bold uppercase tracking-[0.2em] text-cyan">Starter</th>
-                    <th className="p-6 text-[9px] font-bold uppercase tracking-[0.2em] text-purple-400">Growth</th>
-                    <th className="p-6 text-[9px] font-bold uppercase tracking-[0.2em] text-yellow-500">Dominance</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-white/5 text-[11px] font-medium">
-                  {[
-                    ["Custom Website Design", true, true, true],
-                    ["Social Media Management", "Limited", true, true],
-                    ["SEO Optimization", false, "Standard", "Advanced"],
-                    ["Brand Identity Design", false, false, true]
-                  ].map((row, i) => (
-                    <tr key={i} className="hover:bg-white/[0.02] transition-colors">
-                      <td className="p-6 text-slate-300">{row[0]}</td>
-                      <td className="p-6">{typeof row[1] === 'boolean' ? (row[1] ? <Check className="w-4 h-4 text-cyan" /> : <Minus className="w-4 h-4 text-slate-700" />) : row[1]}</td>
-                      <td className="p-6">{typeof row[2] === 'boolean' ? (row[2] ? <Check className="w-4 h-4 text-purple-400" /> : <Minus className="w-4 h-4 text-slate-700" />) : row[2]}</td>
-                      <td className="p-6">{typeof row[3] === 'boolean' ? (row[3] ? <Check className="w-4 h-4 text-yellow-500" /> : <Minus className="w-4 h-4 text-slate-700" />) : row[3]}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </GlassCard>
-          </ScrollReveal>
         </div>
       </section>
 
@@ -137,11 +106,11 @@ export const Services: React.FC = () => {
               <p className="text-slate-300 leading-relaxed text-[13px]">{selectedService.fullDescription}</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-4">
                 <div className="bg-white/5 p-6 rounded-xl border border-white/5">
-                  <h4 className="text-cyan font-bold mb-4 uppercase text-[9px] tracking-widest">Core Benefits</h4>
+                  <h4 className="text-cyan font-bold mb-4 uppercase text-[9px] tracking-widest">{t('services.benefits')}</h4>
                   <ul className="space-y-2.5">{selectedService.benefits?.map((b, i) => <li key={i} className="text-[11px] text-slate-400 flex items-center gap-2"><Check className="w-3 h-3 text-cyan" /> {b}</li>)}</ul>
                 </div>
                 <div className="bg-white/5 p-6 rounded-xl border border-white/5">
-                  <h4 className="text-purple-400 font-bold mb-4 uppercase text-[9px] tracking-widest">Deliverables</h4>
+                  <h4 className="text-purple-400 font-bold mb-4 uppercase text-[9px] tracking-widest">{t('services.deliverables')}</h4>
                   <ul className="space-y-2.5">{selectedService.deliverables?.map((d, i) => <li key={i} className="text-[11px] text-slate-400 flex items-center gap-2"><div className="w-1 h-1 bg-purple-500 rounded-full" /> {d}</li>)}</ul>
                 </div>
               </div>
@@ -150,7 +119,7 @@ export const Services: React.FC = () => {
                 onClick={() => setSelectedService(null)} 
                 className="w-full py-4 bg-white text-[#030014] font-black uppercase text-[10px] tracking-widest rounded-lg hover:bg-cyan hover:text-white transition-all shadow-lg shadow-white/5 active:scale-95 flex items-center justify-center"
               >
-                Initiate Engagement
+                {t('services.initiate')}
               </Link>
             </div>
           </GlassCard>

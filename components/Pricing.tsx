@@ -3,61 +3,60 @@ import { GlassCard } from './GlassCard';
 import { ScrollReveal } from './ScrollReveal';
 import { Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../src/translations/LanguageContext';
 
-const PLANS = [
-  {
-    name: "Starter",
-    price: "From $499",
-    tagline: "Foundation for digital authority.",
-    features: [
-      "One-page or small business website",
-      "Basic SEO setup",
-      "Brand color & typography system",
-      "Social media starter strategy"
-    ],
-    cta: "Start Project"
-  },
-  {
-    name: "Growth",
-    price: "From $999",
-    tagline: "Strategic market expansion.",
-    features: [
-      "Multi-page website",
-      "Advanced SEO optimization",
-      "Social media management setup",
-      "Content & growth strategy",
-      "Performance optimization"
-    ],
-    cta: "Grow Your Brand",
-    highlight: true
-  },
-  {
-    name: "Dominance",
-    price: "Custom Pricing",
-    tagline: "Complete category ownership.",
-    features: [
-      "Full website & branding system",
-      "SEO strategy & execution",
-      "Ongoing social media management",
-      "Full brand identity development",
-      "Long-term growth strategy"
-    ],
-    cta: "Book a Call"
-  }
-];
+export const Pricing: React.FC = () => {
+  const { t } = useLanguage();
 
-interface PricingProps {
-  // Props removed
-}
+  const PLANS = [
+    {
+      name: t('pricing.starter.name'),
+      price: t('pricing.starter.price'),
+      tagline: t('pricing.starter.tagline'),
+      features: [
+        t('pricing.starter.f1'),
+        t('pricing.starter.f2'),
+        t('pricing.starter.f3'),
+        t('pricing.starter.f4')
+      ],
+      cta: t('pricing.starter.cta')
+    },
+    {
+      name: t('pricing.growth.name'),
+      price: t('pricing.growth.price'),
+      tagline: t('pricing.growth.tagline'),
+      features: [
+        t('pricing.growth.f1'),
+        t('pricing.growth.f2'),
+        t('pricing.growth.f3'),
+        t('pricing.growth.f4'),
+        t('pricing.growth.f5')
+      ],
+      cta: t('pricing.growth.cta'),
+      highlight: true
+    },
+    {
+      name: t('pricing.dominance.name'),
+      price: t('pricing.dominance.price'),
+      tagline: t('pricing.dominance.tagline'),
+      features: [
+        t('pricing.dominance.f1'),
+        t('pricing.dominance.f2'),
+        t('pricing.dominance.f3'),
+        t('pricing.dominance.f4'),
+        t('pricing.dominance.f5')
+      ],
+      cta: t('pricing.dominance.cta')
+    }
+  ];
 
-export const Pricing: React.FC<PricingProps> = () => {
   return (
     <section id="pricing" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-20">
-            <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-cyan mb-4">Our Packages</p>
-            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">Strategic Models</h2>
+            <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-cyan mb-4">{t('pricing.badge')}</p>
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">{t('pricing.title')}</h2>
           </div>
         </ScrollReveal>
 

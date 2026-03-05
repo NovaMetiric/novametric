@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { Navigation } from './components/Navigation';
 import { Home } from './components/Home';
 import { Services } from './components/Services';
@@ -21,28 +22,34 @@ const ScrollToTop = () => {
   return null;
 };
 
+import { LanguageProvider } from './src/translations/LanguageContext';
+
 const App: React.FC = () => {
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="min-h-screen text-white selection:bg-cyan selection:text-black flex flex-col bg-[#030014]">
-        <Navigation />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/insights" element={<Insights />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/terms" element={<Terms />} />
-            <Route path="/compliance" element={<Compliance />} />
-            <Route path="*" element={<Home />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <HelmetProvider>
+      <LanguageProvider>
+        <Router>
+          <ScrollToTop />
+          <div className="min-h-screen text-white selection:bg-cyan selection:text-black flex flex-col bg-[#030014]">
+            <Navigation />
+            <main className="flex-grow">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/insights" element={<Insights />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/privacy" element={<Privacy />} />
+                <Route path="/terms" element={<Terms />} />
+                <Route path="/compliance" element={<Compliance />} />
+                <Route path="*" element={<Home />} />
+              </Routes>
+            </main>
+            <Footer />
+          </div>
+        </Router>
+      </LanguageProvider>
+    </HelmetProvider>
   );
 };
 

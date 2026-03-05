@@ -3,28 +3,30 @@ import { GlassCard } from './GlassCard';
 import { ScrollReveal } from './ScrollReveal';
 import { TrendingUp, ArrowRight, Layout, Search, Megaphone, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../src/translations/LanguageContext';
 
 interface EvolutionSectionProps {
   // Props removed
 }
 
 export const EvolutionSection: React.FC<EvolutionSectionProps> = () => {
+  const { t } = useLanguage();
   return (
     <section id="growth" className="py-24 px-6 relative border-t border-white/5">
       <div className="max-w-4xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-cyan mb-4">Market Transformation</p>
-            <h2 className="text-4xl md:text-5xl font-black uppercase mb-4 tracking-tight">Your Evolution</h2>
-            <p className="text-[10px] text-slate-500 uppercase tracking-widest">The NovaMetric effect visualized.</p>
+            <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-cyan mb-4">{t('evolution.badge')}</p>
+            <h2 className="text-4xl md:text-5xl font-black uppercase mb-4 tracking-tight">{t('evolution.title')}</h2>
+            <p className="text-[10px] text-slate-500 uppercase tracking-widest">{t('evolution.subtext')}</p>
           </div>
         </ScrollReveal>
 
         <div className="space-y-12 mb-24">
           <ScrollReveal direction="up">
             <GlassCard className="p-8 text-center opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700 max-w-2xl mx-auto border-white/5">
-              <p className="text-[9px] font-bold tracking-widest uppercase text-slate-500 mb-2">Yesterday</p>
-              <h3 className="text-xl font-bold text-slate-400 mb-8 uppercase">Before NovaMetric</h3>
+              <p className="text-[9px] font-bold tracking-widest uppercase text-slate-500 mb-2">{t('evolution.yesterday')}</p>
+              <h3 className="text-xl font-bold text-slate-400 mb-8 uppercase">{t('evolution.before')}</h3>
               
               <div className="space-y-3 max-w-sm mx-auto mb-8">
                 <div className="h-1 w-full bg-slate-800 rounded-full"></div>
@@ -33,7 +35,7 @@ export const EvolutionSection: React.FC<EvolutionSectionProps> = () => {
                 <div className="h-1 w-1/2 bg-slate-800 rounded-full"></div>
               </div>
               
-              <p className="text-[11px] italic text-slate-500 uppercase tracking-tighter">"Stagnant conversion rates and unpredictable ad spend."</p>
+              <p className="text-[11px] italic text-slate-500 uppercase tracking-tighter">"{t('evolution.yesterday_quote')}"</p>
             </GlassCard>
           </ScrollReveal>
 
@@ -45,8 +47,8 @@ export const EvolutionSection: React.FC<EvolutionSectionProps> = () => {
 
           <ScrollReveal direction="up" delay={200}>
             <GlassCard className="p-8 text-center border-cyan/20 ring-1 ring-cyan/5 max-w-2xl mx-auto">
-              <p className="text-[9px] font-bold tracking-widest uppercase text-cyan mb-2">Tomorrow</p>
-              <h3 className="text-xl font-bold text-white mb-10 uppercase">With NovaMetric</h3>
+              <p className="text-[9px] font-bold tracking-widest uppercase text-cyan mb-2">{t('evolution.tomorrow')}</p>
+              <h3 className="text-xl font-bold text-white mb-10 uppercase">{t('evolution.after')}</h3>
               
               <div className="space-y-3 max-w-sm mx-auto mb-10">
                 <div className="h-1 w-full bg-cyan/40 rounded-full"></div>
@@ -57,8 +59,8 @@ export const EvolutionSection: React.FC<EvolutionSectionProps> = () => {
 
               <div className="inline-block p-6 rounded-xl bg-cyan/[0.03] border border-cyan/10">
                 <TrendingUp className="w-6 h-6 text-cyan mx-auto mb-2" />
-                <div className="text-3xl font-black text-cyan tracking-tight mb-1">300% GROWTH</div>
-                <p className="text-[8px] font-bold uppercase tracking-[0.2em] text-cyan/70">Optimized Scaling Protocol</p>
+                <div className="text-3xl font-black text-cyan tracking-tight mb-1">{t('evolution.growth')}</div>
+                <p className="text-[8px] font-bold uppercase tracking-[0.2em] text-cyan/70">{t('evolution.protocol')}</p>
               </div>
             </GlassCard>
           </ScrollReveal>
@@ -68,14 +70,14 @@ export const EvolutionSection: React.FC<EvolutionSectionProps> = () => {
         <ScrollReveal>
           <div className="pt-12 border-t border-white/5">
             <div className="text-center mb-10">
-              <h3 className="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-500">Service Preview</h3>
+              <h3 className="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-500">{t('evolution.preview')}</h3>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { icon: Layout, label: 'Design' },
-                { icon: Search, label: 'SEO' },
-                { icon: Megaphone, label: 'Ads' },
-                { icon: ShieldCheck, label: 'Branding' }
+                { icon: Layout, label: t('evolution.design') },
+                { icon: Search, label: t('evolution.seo') },
+                { icon: Megaphone, label: t('evolution.ads') },
+                { icon: ShieldCheck, label: t('evolution.branding') }
               ].map((item, i) => (
                 <Link 
                   key={i} 

@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Ballina",
+    "about": "Rreth nesh",
+    "services": "Shërbimet",
+    "insights": "Analizat",
+    "contact": "Kontakti",
+    "manifesto": "Manifesti"
+  },
+  "hero": {
+    "badge": "Ekselenca Digjitale",
+    "title": "Arkitektura e Dominimit",
+    "title_accent": "Digjital",
+    "description": "Ne ndërtojmë ekosisteme digjitale me performancë të lartë për markat që refuzojnë të jenë mesatare. Dizajni i saktë takohet me rritjen algoritmike.",
+    "cta_primary": "Fillo Projektin",
+    "cta_secondary": "Shiko Analizat"
+  },
+  "footer": {
+    "description": "Duke dizajnuar përvoja digjitale që ndihmojnë markat të rriten dhe të dallohen në internet. Ne fokusohemi në marketingun e bazuar në rezultate dhe zhvillimin profesional të markës.",
+    "navigation": "Navigimi",
+    "connect": "Lidhu",
+    "privacy": "Privatësia",
+    "terms": "Kushtet",
+    "compliance": "Pajtueshmëria",
+    "copyright": "© 2024 NOVAMETRIC DIGITAL. SISTEME TË OPTIMIZUARA."
+  },
+  "home": {
+    "manifesto_badge": "Manifesti",
+    "manifesto_title": "\"Në një botë me zhurmë, heshtja është fatale. Ne ju japim megafonin.\"",
+    "manifesto_description": "Agjencitë tradicionale shesin orë. Ne shesim rezultate. Duke shkrirë psikologjinë e sjelljes me modelimin e të dhënave me frekuencë të lartë, ne nuk gjejmë vetëm audiencën tuaj - ne e ndërtojmë atë.",
+    "manifesto_cta": "Lexoni Manifestin tonë të Plotë",
+    "newsletter_badge": "Qasje e Brendshme",
+    "newsletter_title": "Bashkohu me Listën",
+    "newsletter_description": "Analiza të thella javore mbi performancën algoritmike dhe ndryshimet e tregut. Pa gjëra të tepërta. Vetëm alfa për elitën digjitale.",
+    "newsletter_placeholder": "EMAIL-I JUAJ I SIGURT",
+    "newsletter_button": "Bashkohu",
+    "newsletter_success": "Mirësevini në Rrethin e Brendshëm"
+  },
+  "about": {
+    "hero_title": "Jo vetëm një agjenci.",
+    "hero_accent": "Një multiplikator force.",
+    "description": "NovaMetric u krijua për të ndihmuar bizneset të dallohen në një hapësirë digjitale të mbingarkuar. Ne fokusohemi në dizajnin e pastër, komunikimin e qartë dhe strategjitë që japin rezultate reale dhe të matshme.",
+    "stats": {
+      "projects": "PROJEKTE TË DORËZUARA",
+      "reach": "ARRITJA E KLIENTËVE",
+      "partnerships": "PARTNERITETET",
+      "satisfaction": "KËNAQËSIA E KLIENTIT",
+      "projects_val": "INDUSTRIA TË SHUMËFISHTA",
+      "reach_val": "LOKALE DHE NDËRKOMBËTARE",
+      "partners_val": "AFATGJATA",
+      "satisfaction_val": "E LARTË"
+    },
+    "vision_title": "Vizioni ynë Strategjik",
+    "vision_p1": "Ne besojmë se prezenca digjitale është më shumë se thjesht vizuale - bëhet fjalë për ndërtimin e një baze për rritje. Ne ndihmojmë markat të gjejnë zërin e tyre unik dhe ta shprehin atë përmes mjeteve digjitale me performancë të lartë.",
+    "vision_p2": "Qasja jonë kombinon ekzekutimin kreativ me strategjinë e bazuar në të dhëna. Ne nuk ndjekim thjesht trendet; ne identifikojmë atë që funksionon për tregun tuaj specifik për të siguruar sukses të qëndrueshëm."
+  },
+  "services": {
+    "badge": "Çfarë bëjmë ne",
+    "title": "Zgjidhje të Ndërtuara me Saktësi",
+    "view_spec": "Shiko Specifikimin",
+    "composition_title": "Përbërja e Shërbimit",
+    "composition_subtitle": "Qasja jonë sistematike ndaj rritjes së kategorisë.",
+    "table": {
+      "infrastructure": "Infrastruktura",
+      "starter": "Fillestar",
+      "growth": "Rritje",
+      "dominance": "Dominim"
+    },
+    "modal": {
+      "benefits": "Përfitimet Kryesore",
+      "deliverables": "Dorëzimet",
+      "cta": "Inicion Angazhimin"
+    },
+    "items": {
+      "web": {
+        "title": "Dizajni i Faqeve të Internetit",
+        "desc": "Faqe interneti moderne, të shpejta dhe reaguese të dizajnuara për të kthyer vizitorët në klientë. Ndërtuar me UI të pastër, UX të fortë dhe zhvillim të fokusuar në performancë.",
+        "full": "Ne nuk dizajnojmë thjesht faqe interneti; ne arkitektojmë prezencën digjitale. Ekipi ynë shkrin shkëlqimin estetik me psikologjinë njohëse për të udhëhequr përdoruesit pa mundim nga kurioziteti në konvertim.",
+        "benefits": ["Kohë të optimizuara të ngarkimit", "Arkitekturë e fokusuar në celular", "Optimizimi i paraqitjes i fokusuar te përdoruesi"],
+        "deliverables": ["Prototip UI/UX me besnikëri të lartë", "Ndërtim modern i uebit", "Auditimi i performancës"]
+      },
+      "seo": {
+        "title": "Optimizimi SEO",
+        "desc": "Optimizimi i motorëve të kërkimit që përmirëson dukshmërinë, nxit trafikun organik dhe ndihmon biznesin tuaj të renditet më lart në Google.",
+        "full": "Dukshmëria është themeli i rritjes digjitale. Ne vendosim struktura teknike SEO dhe analiza strategjike të fjalëve kyçe që sigurojnë që marka juaj të gjendet nga audienca e duhur.",
+        "benefits": ["Renditje të përmirësuara të kërkimit", "Optimizimi i kërkimit lokal", "Kontrollet teknike të shëndetit"],
+        "deliverables": ["Auditimi teknik", "Strategjia e lidhjeve kthyese", "Optimizimi në faqe"]
+      },
+      "social": {
+        "title": "Menaxhimi i Mediave Sociale",
+        "desc": "Krijimi strategjik i përmbajtjes dhe menaxhimi i llogarive që ndërton besimin e markës, angazhimin dhe prezencën e qëndrueshme në internet.",
+        "full": "Marka juaj ka nevojë për një zë të qëndrueshëm për të ndërtuar besim të qëndrueshëm. Ne kurojmë plane strategjike të përmbajtjes që rezonojnë me audiencën tuaj të synuar dhe nxisin angazhim të vërtetë.",
+        "benefits": ["Ndërtimi i besimit të markës", "Prezencë e qëndrueshme në internet", "Rritja e audiencës së synuar"],
+        "deliverables": ["Strategjia e përmbajtjes", "Menaxhimi i mediave sociale", "Raportet e angazhimit"]
+      },
+      "branding": {
+        "title": "Branding i Plotë",
+        "desc": "Sisteme të plota të identitetit të markës duke përfshirë dizajnin e logos, paletat e ngjyrave, tipografinë dhe drejtimin vizual për konsistencë afatgjatë të markës.",
+        "full": "Një markë e fortë është një përshtypje e qëndrueshme. Ne farkëtojmë identitete që janë të pamundura të injorohen, duke përzier semantikën vizuale me pozicionimin strategjik për të ndërtuar autoritetin e tregut.",
+        "benefits": ["Identitet vizual i qëndrueshëm", "Pozicionimi profesional i tregut", "Kapitali afatgjatë i markës"],
+        "deliverables": ["Sistemi i identitetit", "Udhëzimet e markës", "Udhëzuesi i stilit vizual"]
+      }
+    }
+  },
+  "contact": {
+    "badge": "Terminali i Angazhimit",
+    "title_line1": "Ndërtoni të",
+    "title_line2": "Ardhmen",
+    "description": "Pavarësisht nëse po kërkoni për një metamorfozë totale të markës apo shkallëzim të saktë inxhinierik, strategët tanë janë gati të ndërtojnë dominimin tuaj.",
+    "email_label": "Linja e Drejtpërdrejtë e Sigurt",
+    "success_title": "Transmetimi i Suksesshëm",
+    "success_description": "Një strateg i lartë do t'ju kontaktojë brenda 24 orëve.",
+    "send_another": "Dërgoni një Sinjal Tjetër",
+    "error_message": "Transmetimi u Ndërpre. Ju lutemi provoni përsëri.",
+    "form_name": "EMRI",
+    "form_email": "EMAIL I SIGURT",
+    "form_message": "PËRSHKRUANI AMBICIONIN TUAJ",
+    "submit": "Dërgoni Propozimin",
+    "submitting": "Duke Transmetuar të Dhënat...",
+    "footer_note": "Transmetim i enkriptuar. Rreptësisht konfidencial."
+  },
+  "insights": {
+    "badge": "Qendra e Inteligjencës",
+    "title": "Vështrime Strategjike",
+    "subtitle": "Kërkimi i arkivuar i disponueshëm për partnerët",
+    "read_analysis": "Lexoni Analizën",
+    "reading_time": "min lexim",
+    "return": "Kthehu në Bibliotekë",
+    "author_label": "Autor / Analist Strategjik",
+    "author_name": "V. Sterling, Kryearkitekt i Rritjes",
+    "updated_live": "PËRDITËSUAR LIVE",
+    "newsletter_title": "Bashkohuni me Listën e Inteligjencës",
+    "newsletter_description": "Zhytje të thella javore në performancën algoritmike dhe ndryshimet e tregut. Pa gjëra të panevojshme. Vetëm alfa për elitën digjitale.",
+    "newsletter_success": "Mirësevini në Rrethin e Brendshëm",
+    "newsletter_placeholder": "EMAIL-I JUAJ I SIGURT",
+    "newsletter_button": "Bashkohu",
+    "articles": {
+      "seo": {
+        "title": "Përtej Fjalëve Kyçe: Arkitektura e Autoritetit të Kërkimit në 2025",
+        "desc": "Si të kaloni nga renditja e thjeshtë në bërjen e një entiteti të njohur të markës në epokën e motorëve të kërkimit të drejtuar nga AI.",
+        "full": "Qasja tradicionale 'fjalët kyçe së pari' ndaj SEO po vdes. Në vend të saj, Google po prioritizon 'Entitetet' dhe 'Autoritetin e Markës'. Ndërsa motorët e kërkimit evoluojnë në motorë përgjigjesh, metrikat për sukses janë zhvendosur nga renditja e thjeshtë në arkitekturën gjithëpërfshirëse të autoritetit.\n\nKorniza SEO 2025 e NovaMetric fokusohet në E-E-A-T (Përvoja, Ekspertiza, Autoriteti dhe Besueshmëria) në një nivel strukturor. Ne nuk optimizojmë vetëm faqet; ne optimizojmë gjurmën e markës suaj në të gjithë ueb-in. Kjo do të thotë të sigurohemi që marka juaj të njihet si një burim i besueshëm informacioni nga përdoruesit njerëzorë dhe zvarritësit algoritmikë.\n\nShtyllat kryesore të Strategjisë 2025:\n\n1. Optimizimi SGE: Krijimi i përmbajtjes që modelet e AI (Search Generative Experience) mund të citojnë si burim parësor. Kjo përfshin strukturimin e të dhënave në një mënyrë që është lehtësisht e tretshme për modelet e mëdha gjuhësore, duke përdorur tituj të qartë, pika dhe kërkime origjinale me cilësi të lartë. Duke u bërë një burim i cituar për AI, ju kapni audiencën 'zero-klikim' dhe vendosni besueshmëri të menjëhershme.\n\n2. Përmbajtja Zero-Klikim: Sigurimi i vlerës_së menjëhershme në rezultatet e kërkimit për të ndërtuar njohjen e markës edhe kur përdoruesit nuk klikojnë. Pjesët e zgjedhura të Google dhe panelet e njohurive janë vitrinat e reja. Ne dizajnojmë përmbajtje që i përgjigjet kërkesës së përdoruesit direkt në SERP, gjë që paradoksalisht rrit besimin afatgjatë dhe kërkimet e drejtpërdrejta të markës.\n\n3. Kërkimi Semantik Konversacional: Përshtatja e përmbajtjes suaj me mënyrën natyrale se si njerëzit bëjnë pyetje komplekse. Me rritjen e kërkimit zanor dhe ndërfaqeve intuitive të bisedës me AI, përdoruesit nuk po shtypin më fjalë kyçe të fragmentuara. Ata po bëjnë pyetje të plota. Strategjia jonë përfshin hartimin e këtyre shtigjeve bisedore dhe krijimin e përmbajtjes që shërben si përgjigje përfundimtare për kërkesat komplekse me shumë hapa.\n\n4. Lidhja e Bazuar në Entitete: Kalimi përtej backlink-eve të thjeshta drejt ndërtimit të një rrjeti të rëndësisë tematike. Ne fokusohemi në lidhjen e markës suaj me entitete të tjera të krijuara në nishën tuaj, duke krijuar një 'lagje' autoriteti që u sinjalizon motorëve të kërkimit saktësisht se ku përshtateni në grafikun global të njohurive.\n\nDuke zbatuar këto strategji të avancuara, NovaMetric siguron që marka juaj jo vetëm të renditet - ajo dominon. Ne përgatisim asetet tuaja digjitale për një të ardhme ku kërkimi është proaktiv, i personalizuar dhe i integruar thellë në përvojën e përditshme digjitale të përdoruesit. Ky është evolucioni i autoritetit të kërkimit."
+      },
+      "design": {
+        "title": "Sintaksa Vizuale: ROI i Dizajnit të Ueb-it me Performancë të Lartë",
+        "desc": "Pse estetika premium dhe ndërfaqet e glassmorphism me ngarkim të shpejtë nxisin 40% norma më të larta konvertimi për markat luksoze.",
+        "full": "Dizajni nuk është vetëm se si duket; është se si konvertohet. Në peizazhin modern digjital, një uebsajt me performancë të lartë shërben si një shitës digjital i heshtur, duke punuar 24/7 për të kualifikuar drejtuesit dhe për të ndërtuar kapitalin e markës. Në NovaMetric, ne besojmë se çdo piksel duhet të ketë një qëllim, dhe çdo ndërveprim duhet ta çojë përdoruesit më afër një konvertimi.\n\nNe përdorim 'Sintaksën Vizuale' për të udhëhequr syrin e një përdoruesi drejt thirrjes suaj kryesore për veprim. Duke përdorur thellësinë, turbullimin dhe lëvizjen, ne krijojmë një hierarki informacioni që redukton fërkimin në udhëtimin e blerësit. Kjo nuk ka të bëjë vetëm me estetikën; ka të bëjë me psikologjinë kognitive dhe se si truri i njeriut përpunon informacionin vizual.\n\nParimet e Dizajnit Strategjik për ROI të Lartë:\n\n1. Reduktimi i Ngarkesës Kognitive: Thjeshtimi i të dhënave komplekse përmes UI intuitive. Kur përdoruesit janë të mbingarkuar nga informacioni, ata largohen. Ne strukturojmë faqen tuaj për të paraqitur informacionin në shtresa të tretshme, duke u siguruar që mesazhi më i rëndësishëm të jetë gjithmonë i qartë.\n\n2. Mikro-ndërveprimet: Përdorimi i animacioneve delikate për të shpërblyer angazhimin e përdoruesit. Këto detaje të vogla - si një buton që shkëlqen hollë kur kalohet sipër ose një shirit progresi që animohet pa probleme - krijojnë një ndjenjë cilësie dhe reagimi që ndërton besim te përdoruesi.\n\n3. Shpejtësia si një Karakteristikë: Çdo milisekondë e kohës_së ngarkimit korrespondon drejtpërdrejt me të ardhurat. Ndërtimet tona me efekt xhami janë optimizuar për rendering nën një sekondë. Ne përdorim teknika të avancuara kompresimi dhe kod efikas për të siguruar që faqja juaj të jetë e shpejtë si rrufeja në çdo pajisje.\n\n4. Aksesueshmëria dhe Gjithëpërfshirja: Një faqe me performancë vërtet të lartë është e aksesueshme për të gjithë. Ne sigurohemi që dizajni juaj të plotësojë standardet WCAG, duke zgjeruar shtrirjen tuaj dhe duke demonstruar një angazhim ndaj të gjithë klientëve të mundshëm.\n\n5. Ekselenca Mobile-First: Me shumicën e trafikut në ueb që tani vjen nga pajisjet mobile, faqja juaj duhet të performojë pa të meta në ekrane më të vegjël. Ne dizajnojmë me një mendësi mobile-first, duke u siguruar që përvoja luksoze të ruhet pavarësisht nga hardueri.\n\nBy fokusuar në këto parime bazë, NovaMetric transformon uebsajtin tuaj nga një broshurë e thjeshtë digjitale në një motor të fuqishëm për rritje. Ne krijojmë përvoja që jo vetëm duken premium - ato performojnë në nivelin më të lartë."
+      }
+    }
+  }
+}

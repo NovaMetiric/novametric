@@ -3,68 +3,71 @@ import { GlassCard } from './GlassCard';
 import { Testimonial } from '../types';
 import { ScrollReveal } from './ScrollReveal';
 import { Quote } from 'lucide-react';
-
-const TESTIMONIALS: Testimonial[] = [
-  {
-    id: '1',
-    quote: "We spent 3 years trying to break into the APAC market. NovaMetric did it in 3 months. Their data modeling is essentially clairvoyance.",
-    author: "Elena Rostova",
-    role: "CMO",
-    company: "Velvet Systems",
-    avatarUrl: "https://i.pravatar.cc/150?u=elena"
-  },
-  {
-    id: '2',
-    quote: "I was skeptical about the 'exclusive' tag. I was wrong. The level of attention and the sheer depth of strategy is unlike anything I've seen in 15 years.",
-    author: "Marcus Chen",
-    role: "Founder",
-    company: "Zenith Global",
-    avatarUrl: "https://i.pravatar.cc/150?u=marcus"
-  },
-  {
-    id: '3',
-    quote: "They don't just run ads; they rewrite the narrative of your industry. Our valuation doubled within a year of starting our partnership.",
-    author: "Sarah Jenkins",
-    role: "Director of Growth",
-    company: "Aura Ventures",
-    avatarUrl: "https://i.pravatar.cc/150?u=sarah"
-  },
-  {
-    id: '4',
-    quote: "The ROI was evident within the first 45 days. Their technical SEO squad is in a league of their own. Pure engineering brilliance.",
-    author: "David Vark",
-    role: "VP Marketing",
-    company: "Cipher Labs",
-    avatarUrl: "https://i.pravatar.cc/150?u=david"
-  },
-  {
-    id: '5',
-    quote: "NovaMetric isn't for everyone. It's for those who want to win at any cost. Their strategy is aggressive, precise, and highly profitable.",
-    author: "Sophia Knight",
-    role: "CEO",
-    company: "OmniCore",
-    avatarUrl: "https://i.pravatar.cc/150?u=sophia"
-  },
-  {
-    id: '6',
-    quote: "The branding overhaul they executed for us redefined our category. We're no longer just players; we are the benchmark.",
-    author: "Julian Thorne",
-    role: "COO",
-    company: "Nebula Tech",
-    avatarUrl: "https://i.pravatar.cc/150?u=julian"
-  }
-];
+import { useLanguage } from '../src/translations/LanguageContext';
 
 export const Testimonials: React.FC = () => {
+  const { t } = useLanguage();
+
+  const TESTIMONIALS: Testimonial[] = [
+    {
+      id: '1',
+      quote: t('testimonials.t1.quote'),
+      author: t('testimonials.t1.author'),
+      role: t('testimonials.t1.role'),
+      company: t('testimonials.t1.company'),
+      avatarUrl: "https://i.pravatar.cc/150?u=elena"
+    },
+    {
+      id: '2',
+      quote: t('testimonials.t2.quote'),
+      author: t('testimonials.t2.author'),
+      role: t('testimonials.t2.role'),
+      company: t('testimonials.t2.company'),
+      avatarUrl: "https://i.pravatar.cc/150?u=marcus"
+    },
+    {
+      id: '3',
+      quote: t('testimonials.t3.quote'),
+      author: t('testimonials.t3.author'),
+      role: t('testimonials.t3.role'),
+      company: t('testimonials.t3.company'),
+      avatarUrl: "https://i.pravatar.cc/150?u=sarah"
+    },
+    {
+      id: '4',
+      quote: t('testimonials.t4.quote'),
+      author: t('testimonials.t4.author'),
+      role: t('testimonials.t4.role'),
+      company: t('testimonials.t4.company'),
+      avatarUrl: "https://i.pravatar.cc/150?u=david"
+    },
+    {
+      id: '5',
+      quote: t('testimonials.t5.quote'),
+      author: t('testimonials.t5.author'),
+      role: t('testimonials.t5.role'),
+      company: t('testimonials.t5.company'),
+      avatarUrl: "https://i.pravatar.cc/150?u=sophia"
+    },
+    {
+      id: '6',
+      quote: t('testimonials.t6.quote'),
+      author: t('testimonials.t6.author'),
+      role: t('testimonials.t6.role'),
+      company: t('testimonials.t6.company'),
+      avatarUrl: "https://i.pravatar.cc/150?u=julian"
+    }
+  ];
+
   return (
     <section id="testimonials" className="py-32 px-6 relative border-t border-white/5 overflow-hidden">
       <div className="max-w-7xl mx-auto mb-20">
         <ScrollReveal>
           <div className="text-center">
-            <p className="text-[10px] font-bold tracking-[0.4em] uppercase text-cyan mb-4">The Inner Circle</p>
-            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">Voice of Sovereignty</h2>
+            <p className="text-[10px] font-bold tracking-[0.4em] uppercase text-cyan mb-4">{t('testimonials.badge')}</p>
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">{t('testimonials.title')}</h2>
             <p className="text-slate-400 mt-4 max-w-xl mx-auto text-sm leading-relaxed">
-              We partner with visionaries. Here is what happens when precision meets ambition.
+              {t('testimonials.subtext')}
             </p>
           </div>
         </ScrollReveal>

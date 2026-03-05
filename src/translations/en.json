@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "insights": "Insights",
+    "contact": "Contact",
+    "manifesto": "Manifesto"
+  },
+  "hero": {
+    "badge": "Digital Excellence",
+    "title": "Architecting Digital",
+    "title_accent": "Dominance",
+    "description": "We build high-performance digital ecosystems for brands that refuse to be average. Precision design meets algorithmic growth.",
+    "cta_primary": "Initiate Project",
+    "cta_secondary": "View Intel"
+  },
+  "footer": {
+    "description": "Designing digital experiences that help brands grow and stand out online. We focus on results-driven marketing and professional brand development.",
+    "navigation": "Navigation",
+    "connect": "Connect",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "compliance": "Compliance",
+    "copyright": "© 2024 NOVAMETRIC DIGITAL. SYSTEMS OPTIMIZED."
+  },
+  "home": {
+    "manifesto_badge": "The Manifesto",
+    "manifesto_title": "\"In a world of noise, silence is fatal. We give you the megaphone.\"",
+    "manifesto_description": "Traditional agencies sell hours. We sell outcomes. By fusing behavioral psychology with high-frequency data modeling, we don't just find your audience—we construct it.",
+    "manifesto_cta": "Read Our Full Manifesto",
+    "newsletter_badge": "Insider Access",
+    "newsletter_title": "Join The Intel List",
+    "newsletter_description": "Weekly deep-dives into algorithmic performance and market shifts. No fluff. Just alpha for the digital elite.",
+    "newsletter_placeholder": "YOUR SECURE EMAIL",
+    "newsletter_button": "Join Circle",
+    "newsletter_success": "Welcome to the Inner Circle"
+  },
+  "about": {
+    "hero_title": "Not Just An Agency.",
+    "hero_accent": "A Force Multiplier.",
+    "description": "NovaMetric was created to help businesses stand out in an overcrowded digital space. We focus on clean design, clear communication, and strategies that deliver real, measurable results.",
+    "stats": {
+      "projects": "PROJECTS DELIVERED",
+      "reach": "CLIENT REACH",
+      "partnerships": "PARTNERSHIPS",
+      "satisfaction": "CLIENT SATISFACTION",
+      "projects_val": "MULTIPLE INDUSTRIES",
+      "reach_val": "LOCAL & INTERNATIONAL",
+      "partners_val": "LONG-TERM",
+      "satisfaction_val": "HIGH"
+    },
+    "vision_title": "Our Strategic Vision",
+    "vision_p1": "We believe that digital presence is more than just visuals—it's about building a foundation for growth. We help brands find their unique voice and express it through high-performance digital tools.",
+    "vision_p2": "Our approach combines creative execution with data-driven strategy. We don't just follow trends; we identify what works for your specific market to ensure sustainable success."
+  },
+  "services": {
+    "badge": "What We Do",
+    "title": "Precision-Built Solutions",
+    "view_spec": "View Specification",
+    "composition_title": "Service Composition",
+    "composition_subtitle": "Our systematic approach to category growth.",
+    "table": {
+      "infrastructure": "Infrastructure",
+      "starter": "Starter",
+      "growth": "Growth",
+      "dominance": "Dominance"
+    },
+    "modal": {
+      "benefits": "Core Benefits",
+      "deliverables": "Deliverables",
+      "cta": "Initiate Engagement"
+    },
+    "items": {
+      "web": {
+        "title": "Website Design",
+        "desc": "Modern, fast, and responsive websites designed to convert visitors into clients. Built with clean UI, strong UX, and performance-focused development.",
+        "full": "We don't just design websites; we architect digital presence. Our team merges aesthetic brilliance with cognitive psychology to guide users effortlessly from curiosity to conversion.",
+        "benefits": ["Optimized load times", "Mobile-first architecture", "User-centric layout optimization"],
+        "deliverables": ["High-Fidelity UI/UX Prototype", "Modern Web Build", "Performance Audit"]
+      },
+      "seo": {
+        "title": "SEO Optimization",
+        "desc": "Search engine optimization that improves visibility, drives organic traffic, and helps your business rank higher on Google.",
+        "full": "Visibility is the foundation of digital growth. We deploy technical SEO structures and strategic keyword analysis that ensure your brand is found by the right audience.",
+        "benefits": ["Improved search rankings", "Local search optimization", "Technical health checks"],
+        "deliverables": ["Technical Audit", "Backlink Strategy", "On-page Optimization"]
+      },
+      "social": {
+        "title": "Social Media Management",
+        "desc": "Strategic content creation and account management that builds brand trust, engagement, and consistent online presence.",
+        "full": "Your brand needs a consistent voice to build lasting trust. We curate strategic content plans that resonate with your target audience and foster genuine engagement.",
+        "benefits": ["Brand trust building", "Consistent online presence", "Targeted audience growth"],
+        "deliverables": ["Content Strategy", "Social Media Management", "Engagement Reports"]
+      },
+      "branding": {
+        "title": "Full Branding",
+        "desc": "Complete brand identity systems including logo design, color palettes, typography, and visual direction for long-term brand consistency.",
+        "full": "A strong brand is a lasting impression. We forge identities that are impossible to ignore, blending visual semantics with strategic positioning to build market authority.",
+        "benefits": ["Consistent visual identity", "Professional market positioning", "Long-term brand equity"],
+        "deliverables": ["Identity System", "Brand Guidelines", "Visual Style Guide"]
+      }
+    }
+  },
+  "contact": {
+    "badge": "Engagement Terminal",
+    "title_line1": "Build The",
+    "title_line2": "Future",
+    "description": "Whether you're looking for a total brand metamorphosis or precision-engineered scaling, our strategists are ready to construct your dominance.",
+    "email_label": "Direct Secure Line",
+    "success_title": "Transmission Successful",
+    "success_description": "A senior strategist will reach out within 24 hours.",
+    "send_another": "Send Another Signal",
+    "error_message": "Transmission Interrupted. Please try again.",
+    "form_name": "NAME",
+    "form_email": "SECURE EMAIL",
+    "form_message": "DESCRIBE YOUR AMBITION",
+    "submit": "Submit Proposal",
+    "submitting": "Transmitting Data...",
+    "footer_note": "Encrypted transmission. Strictly confidential."
+  },
+  "insights": {
+    "badge": "Intel Hub",
+    "title": "Strategic Insights",
+    "subtitle": "Archived Research Available for Partners",
+    "read_analysis": "Read Analysis",
+    "reading_time": "min read",
+    "return": "Return to Library",
+    "author_label": "Author / Strategic Analyst",
+    "author_name": "V. Sterling, Chief Growth Architect",
+    "updated_live": "UPDATED LIVE",
+    "newsletter_title": "Join The Intel List",
+    "newsletter_description": "Weekly deep-dives into algorithmic performance and market shifts. No fluff. Just alpha for the digital elite.",
+    "newsletter_success": "Welcome to the Inner Circle",
+    "newsletter_placeholder": "YOUR SECURE EMAIL",
+    "newsletter_button": "Join Circle",
+    "articles": {
+      "seo": {
+        "title": "Beyond Keywords: Architecting Search Authority in 2025",
+        "desc": "How to transition from simple ranking to becoming a recognized brand entity in the age of AI-driven search engines.",
+        "full": "The traditional 'keyword-first' approach to SEO is dying. In its place, Google is prioritizing 'Entities' and 'Brand Authority'. As search engines evolve into answer engines, the metrics for success have shifted from simple rankings to comprehensive authority architecture.\n\nNovaMetric's 2025 SEO Framework focuses on E-E-A-T (Experience, Expertise, Authoritativeness, and Trustworthiness) at a structural level. We don't just optimize pages; we optimize your brand's footprint across the entire web. This means ensuring that your brand is recognized as a reliable source of information by both human users and algorithmic crawlers.\n\nKey Pillars of the 2025 Strategy:\n\n1. SGE Optimization: Crafting content that AI models (Search Generative Experience) can cite as a primary source. This involves structuring data in a way that is easily digestible for large language models, using clear headings, bullet points, and high-quality original research. By becoming a cited source for AI, you capture the 'zero-click' audience and establish immediate credibility.\n\n2. Zero-Click Content: Providing instant value in search results to build brand recognition even when users don't click through. Google's featured snippets and knowledge panels are the new storefronts. We design content that answers the user's query directly on the SERP, which paradoxically increases long-term trust and direct brand searches.\n\n3. Conversational Semantic Search: Aligning your content with the natural way humans ask complex questions. With the rise of voice search and intuitive AI chat interfaces, users are no longer typing fragmented keywords. They are asking full questions. Our strategy involves mapping out these conversational paths and creating content that serves as the definitive answer to complex multi-step inquiries.\n\n4. Entity-Based Linking: Moving beyond simple backlinks to building a web of topical relevance. We focus on connecting your brand with other established entities in your niche, creating a 'neighborhood' of authority that signals to search engines exactly where you fit in the global knowledge graph.\n\nBy implementing these advanced strategies, NovaMetric ensures that your brand doesn't just rank—it dominates. We prepare your digital assets for a future where search is proactive, personalized, and deeply integrated into the user's daily digital experience. This is the evolution of search authority."
+      },
+      "design": {
+        "title": "Visual Syntax: The ROI of High-Performance Web Design",
+        "desc": "Why premium aesthetics and fast-loading glassmorphism interfaces drive 40% higher conversion rates for luxury brands.",
+        "full": "Design is not just how it looks; it is how it converts. In the modern digital landscape, a high-performance website serves as a digital silent salesman, working 24/7 to qualify leads and build brand equity. At NovaMetric, we believe that every pixel should have a purpose, and every interaction should lead the user closer to a conversion.\n\nWe use 'Visual Syntax' to guide a user's eye toward your primary call-to-action. By leveraging depth, blur, and motion, we create a hierarchy of information that reduces friction in the buyer's journey. This isn't just about aesthetics; it's about cognitive psychology and how the human brain processes visual information.\n\nStrategic Design Principles for High ROI:\n\n1. Cognitive Load Reduction: Simplifying complex data through intuitive UI. When users are overwhelmed by information, they bounce. We structure your site to present information in digestible layers, ensuring that the most important message is always clear.\n\n2. Micro-Interactions: Using subtle animations to reward user engagement. These small details—like a button that subtly glows when hovered or a progress bar that animates smoothly—create a sense of quality and responsiveness that builds trust with the user.\n\n3. Speed as a Feature: Every millisecond of load time correlates directly to revenue. Our glass-effect builds are optimized for sub-second rendering. We use advanced compression techniques and efficient code to ensure that your site is lightning-fast on any device.\n\n4. Accessibility and Inclusivity: A truly high-performance site is accessible to everyone. We ensure that your design meets WCAG standards, expanding your reach and demonstrating a commitment to all potential customers.\n\n5. Mobile-First Excellence: With the majority of web traffic now coming from mobile devices, your site must perform flawlessly on smaller screens. We design with a mobile-first mindset, ensuring that the luxury experience is maintained regardless of the hardware.\n\nBy focusing on these core principles, NovaMetric transforms your website from a simple digital brochure into a powerful engine for growth. We create experiences that don't just look premium—they perform at the highest level."
+      }
+    }
+  }
+}

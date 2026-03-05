@@ -1,10 +1,16 @@
 import React from 'react';
 import { ScrollReveal } from './ScrollReveal';
 import { GlassCard } from './GlassCard';
+import { SEO } from './SEO';
 
 export const Privacy: React.FC = () => {
   return (
     <div className="pt-40 pb-32 px-6 bg-[#030014]">
+      <SEO 
+        title="Privacy Policy | NovaMetric Data Protection"
+        description="Read NovaMetric's privacy policy to understand how we collect, use, and protect your information."
+        url="https://novametric.net/privacy"
+      />
       <div className="max-w-4xl mx-auto">
         <ScrollReveal className="mb-16">
           <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tight text-white uppercase">

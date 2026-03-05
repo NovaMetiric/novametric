@@ -1,19 +1,21 @@
 import React from 'react';
-import { Instagram, Linkedin, Twitter, ArrowUpRight, Github, Mail, MapPin, Phone } from 'lucide-react';
+import { Instagram, Linkedin, Twitter, ArrowUpRight, Github, Mail, MapPin, Phone, Facebook } from 'lucide-react';
 import { Logo } from './Logo';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../src/translations/LanguageContext';
 
 interface FooterProps {
   // Props removed
 }
 
 export const Footer: React.FC<FooterProps> = () => {
+  const { t } = useLanguage();
   const navItems = [
-    { label: 'Home', to: '/' },
-    { label: 'About Us', to: '/about' },
-    { label: 'Services', to: '/services' },
-    { label: 'Insights', to: '/insights' },
-    { label: 'Contact', to: '/contact' },
+    { label: t('nav.home'), to: '/' },
+    { label: t('nav.about'), to: '/about' },
+    { label: t('nav.services'), to: '/services' },
+    { label: t('nav.insights'), to: '/insights' },
+    { label: t('nav.contact'), to: '/contact' },
   ];
 
   return (
@@ -35,14 +37,14 @@ export const Footer: React.FC<FooterProps> = () => {
               </span>
             </Link>
             <p className="text-slate-400 text-[13px] leading-relaxed max-w-sm font-medium">
-              Designing digital experiences that help brands grow and stand out online. We focus on results-driven marketing and professional brand development.
+              {t('footer.subtext')}
             </p>
             <div className="flex items-center gap-4 pt-2">
               {[
+                { Icon: Facebook, href: 'https://www.facebook.com/share/16zkCm9K5r/?mibextid=wwXIfr' },
                 { Icon: Instagram, href: 'https://www.instagram.com/novametricmk' },
                 { Icon: Linkedin, href: '#' },
                 { Icon: Twitter, href: '#' },
-                { Icon: Github, href: '#' }
               ].map(({ Icon, href }, i) => (
                 <a 
                   key={i} 
@@ -60,7 +62,7 @@ export const Footer: React.FC<FooterProps> = () => {
           <div className="md:col-span-6 lg:col-span-3">
             <h4 className="text-[9px] font-black uppercase tracking-[0.3em] text-white mb-6 flex items-center gap-3">
               <span className="w-4 h-[1px] bg-cyan"></span>
-              Navigation
+              {t('footer.nav_title')}
             </h4>
             <ul className="space-y-3">
               {navItems.map((item) => (
@@ -80,7 +82,7 @@ export const Footer: React.FC<FooterProps> = () => {
           <div className="md:col-span-6 lg:col-span-4">
             <h4 className="text-[9px] font-black uppercase tracking-[0.3em] text-white mb-6 flex items-center gap-3">
               <span className="w-4 h-[1px] bg-cyan"></span>
-              Connect
+              {t('footer.connect_title')}
             </h4>
             <div className="space-y-5">
               <div className="flex items-start gap-3 group">
@@ -108,12 +110,12 @@ export const Footer: React.FC<FooterProps> = () => {
 
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[9px] text-slate-600 font-bold uppercase tracking-[0.2em]">
-            © 2024 NOVAMETRIC DIGITAL. SYSTEMS OPTIMIZED.
+            {t('footer.copyright')}
           </p>
           <div className="flex gap-6">
-            <Link to="/privacy" className="text-[9px] text-slate-600 hover:text-white uppercase tracking-widest transition-colors font-bold">Privacy</Link>
-            <Link to="/terms" className="text-[9px] text-slate-600 hover:text-white uppercase tracking-widest transition-colors font-bold">Terms</Link>
-            <Link to="/compliance" className="text-[9px] text-slate-600 hover:text-white uppercase tracking-widest transition-colors font-bold">Compliance</Link>
+            <Link to="/privacy" className="text-[9px] text-slate-600 hover:text-white uppercase tracking-widest transition-colors font-bold">{t('footer.privacy')}</Link>
+            <Link to="/terms" className="text-[9px] text-slate-600 hover:text-white uppercase tracking-widest transition-colors font-bold">{t('footer.terms')}</Link>
+            <Link to="/compliance" className="text-[9px] text-slate-600 hover:text-white uppercase tracking-widest transition-colors font-bold">{t('footer.compliance')}</Link>
           </div>
         </div>
       </div>
